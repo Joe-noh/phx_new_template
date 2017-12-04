@@ -42,6 +42,8 @@ defmodule PhxApiTemplate.Mixfile do
 
       {:corsica, "~> 1.0"},
 
+      {:mix_test_watch, "~> 0.5", only: :dev, runtime: false},
+
       {:ex_machina, "~> 2.1", only: :test},
       {:mox, "~> 0.3.1", only: :test},
     ]
