@@ -62,3 +62,14 @@ config :logger, level: :info
 # Finally import the config/prod.secret.exs
 # which should be versioned separately.
 import_config "prod.secret.exs"
+
+# config :phx_api_template, PhxApiTemplateWeb.Endpoint,
+#   secret_key_base: "VPjQjUOyFdxQGsVaJPq4X0Nq8I/N+MD/hAdWsJHDWtV9yNgY1jI9T/c8yt4EOENy"
+#
+# # Configure your database
+# config :phx_api_template, PhxApiTemplate.Repo,
+#   adapter: Ecto.Adapters.Postgres,
+#   username: "postgres",
+#   password: "postgres",
+#   database: "phx_api_template_prod",
+#   pool_size: 15
