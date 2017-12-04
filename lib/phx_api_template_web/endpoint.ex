@@ -20,6 +20,8 @@ defmodule PhxApiTemplateWeb.Endpoint do
   plug Plug.RequestId
   plug Plug.Logger
 
+  plug Corsica, Application.get_env(:phx_api_template, :cors)
+
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
     pass: ["*/*"],
