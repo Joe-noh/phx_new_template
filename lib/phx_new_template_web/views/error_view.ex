@@ -1,5 +1,5 @@
-defmodule PhxApiTemplateWeb.ErrorView do
-  use PhxApiTemplateWeb, :view
+defmodule PhxNewTemplateWeb.ErrorView do
+  use PhxNewTemplateWeb, :view
 
   def render("404.json", _assigns) do
     %{errors: %{detail: "Page not found"}}

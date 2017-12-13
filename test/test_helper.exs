@@ -2,4 +2,4 @@
 
 ExUnit.start()
 
-Ecto.Adapters.SQL.Sandbox.mode(PhxApiTemplate.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(PhxNewTemplate.Repo, :manual)

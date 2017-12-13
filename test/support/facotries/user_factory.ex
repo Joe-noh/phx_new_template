@@ -1,8 +1,8 @@
-defmodule PhxApiTemplate.UserFactory do
+defmodule PhxNewTemplate.UserFactory do
   defmacro __using__(_opts) do
     quote do
       # def user_factory do
-      #   %PhxApiTemplate.User{name: "John Doe"}
+      #   %PhxNewTemplate.User{name: "John Doe"}
       # end
     end
   end

@@ -1,12 +1,12 @@
-defmodule PhxApiTemplateWeb do
+defmodule PhxNewTemplateWeb do
   @moduledoc """
   The entrypoint for defining your web interface, such
   as controllers, views, channels and so on.
 
   This can be used in your application as:
 
-      use PhxApiTemplateWeb, :controller
-      use PhxApiTemplateWeb, :view
+      use PhxNewTemplateWeb, :controller
+      use PhxNewTemplateWeb, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -19,24 +19,24 @@ defmodule PhxApiTemplateWeb do
 
   def controller do
     quote do
-      use Phoenix.Controller, namespace: PhxApiTemplateWeb
+      use Phoenix.Controller, namespace: PhxNewTemplateWeb
       import Plug.Conn
-      import PhxApiTemplateWeb.Router.Helpers
-      import PhxApiTemplateWeb.Gettext
+      import PhxNewTemplateWeb.Router.Helpers
+      import PhxNewTemplateWeb.Gettext
     end
   end
 
   def view do
     quote do
-      use Phoenix.View, root: "lib/phx_api_template_web/templates",
-                        namespace: PhxApiTemplateWeb
+      use Phoenix.View, root: "lib/phx_new_template_web/templates",
+                        namespace: PhxNewTemplateWeb
 
       # Import convenience functions from controllers
       import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
 
-      import PhxApiTemplateWeb.Router.Helpers
-      import PhxApiTemplateWeb.ErrorHelpers
-      import PhxApiTemplateWeb.Gettext
+      import PhxNewTemplateWeb.Router.Helpers
+      import PhxNewTemplateWeb.ErrorHelpers
+      import PhxNewTemplateWeb.Gettext
     end
   end
 
@@ -51,7 +51,7 @@ defmodule PhxApiTemplateWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import PhxApiTemplateWeb.Gettext
+      import PhxNewTemplateWeb.Gettext
     end
   end
 

@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :phx_api_template, PhxApiTemplateWeb.Endpoint,
+config :phx_new_template, PhxNewTemplateWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -37,10 +37,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :phx_api_template, PhxApiTemplate.Repo,
+config :phx_new_template, PhxNewTemplate.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "phx_api_template_dev",
+  database: "phx_new_template_dev",
   hostname: "localhost",
   pool_size: 10

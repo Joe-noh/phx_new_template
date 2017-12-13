@@ -2,7 +2,7 @@ use Mix.Config
 
 # We don't run a server during test. If one is required,
 # you can enable the server option below.
-config :phx_api_template, PhxApiTemplateWeb.Endpoint,
+config :phx_new_template, PhxNewTemplateWeb.Endpoint,
   http: [port: 4001],
   server: false
 
@@ -10,10 +10,10 @@ config :phx_api_template, PhxApiTemplateWeb.Endpoint,
 config :logger, level: :warn
 
 # Configure your database
-config :phx_api_template, PhxApiTemplate.Repo,
+config :phx_new_template, PhxNewTemplate.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "phx_api_template_test",
+  database: "phx_new_template_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

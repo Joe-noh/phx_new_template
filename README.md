@@ -1,4 +1,4 @@
-# PhxApiTemplate
+# PhxNewTemplate
 
 To start your Phoenix server:
 

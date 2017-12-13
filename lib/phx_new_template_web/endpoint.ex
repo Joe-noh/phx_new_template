@@ -1,14 +1,14 @@
-defmodule PhxApiTemplateWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :phx_api_template
+defmodule PhxNewTemplateWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :phx_new_template
 
-  socket "/socket", PhxApiTemplateWeb.UserSocket
+  socket "/socket", PhxNewTemplateWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :phx_api_template, gzip: false,
+    at: "/", from: :phx_new_template, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -20,7 +20,7 @@ defmodule PhxApiTemplateWeb.Endpoint do
   plug Plug.RequestId
   plug Plug.Logger
 
-  plug Corsica, Application.get_env(:phx_api_template, :cors)
+  plug Corsica, Application.get_env(:phx_new_template, :cors)
 
   plug Plug.Parsers,
     parsers: [:urlencoded, :multipart, :json],
@@ -35,10 +35,10 @@ defmodule PhxApiTemplateWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_phx_api_template_key",
+    key: "_phx_new_template_key",
     signing_salt: "BqURv4d4"
 
-  plug PhxApiTemplateWeb.Router
+  plug PhxNewTemplateWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

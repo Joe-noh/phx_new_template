@@ -1,5 +1,5 @@
-defmodule PhxApiTemplate.Factory do
-  use ExMachina.Ecto, repo: PhxApiTemplate.Repo
+defmodule PhxNewTemplate.Factory do
+  use ExMachina.Ecto, repo: PhxNewTemplate.Repo
 
-  use PhxApiTemplate.UserFactory
+  use PhxNewTemplate.UserFactory
 end

@@ -1,4 +1,4 @@
-defmodule PhxApiTemplateWeb.ChannelCase do
+defmodule PhxNewTemplateWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule PhxApiTemplateWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint PhxApiTemplateWeb.Endpoint
+      @endpoint PhxNewTemplateWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhxApiTemplate.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhxNewTemplate.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PhxApiTemplate.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(PhxNewTemplate.Repo, {:shared, self()})
     end
     :ok
   end
