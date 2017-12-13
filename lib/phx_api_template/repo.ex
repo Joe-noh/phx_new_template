@@ -1,5 +1,6 @@
 defmodule PhxApiTemplate.Repo do
   use Ecto.Repo, otp_app: :phx_api_template
+  use Scrivener, page_size: 50
 
   @doc """
   Dynamically loads the repository url from the

@@ -41,6 +41,7 @@ defmodule PhxApiTemplate.Mixfile do
       {:cowboy, "~> 1.0"},
 
       {:corsica, "~> 1.0"},
+      {:scrivener_ecto, "~> 1.3"},
 
       {:mix_test_watch, "~> 0.5", only: :dev, runtime: false},
 
